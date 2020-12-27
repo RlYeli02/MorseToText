@@ -14,6 +14,11 @@ class MorseToTextTest extends org.scalatest.funsuite.AnyFunSuite {
     var actual = ".---- ----- ----- --..-- ----- ----- ----- .-.-.- ----- ----- .-.-."
     assert(Morse.Morse.MorseToTextTest(actual)== expected)
   }
+  test(".--. .- .-. --.- ..- . .-.-. debe ser 'parque'"){
+    var expected = "parque";
+    var actual = ".--. .- .-. --.- ..- . .-.-."
+    assert(Morse.Morse.MorseToTextTest(actual)== expected)
+  }
 
   
 }
